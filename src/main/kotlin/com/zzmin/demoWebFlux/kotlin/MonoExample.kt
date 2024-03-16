@@ -15,7 +15,6 @@ import java.net.URI
 fun main() {
     println("=== zzmin start ===")
 
-
     // 1. Mono - 1개 data 생성후 emit
     Mono.just("Hello :D")
         .subscribe { message: String? -> Logger.info("# emitted data: {}", message)}

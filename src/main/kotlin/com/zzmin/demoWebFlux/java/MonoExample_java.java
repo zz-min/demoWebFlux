@@ -9,6 +9,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
@@ -17,7 +18,6 @@ import java.util.Collections;
 public class MonoExample_java {
     public static void main(String[] args) {
         System.out.println("=== zzmin start ===");
-
 
         // 1. Mono - 1개 data 생성후 emit
         Mono.just("Hello :D")
