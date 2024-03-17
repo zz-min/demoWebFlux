@@ -1,0 +1,49 @@
+1.
+- 요청 쿼리 :
+    query bookByIdTest {
+      bookById(id: "book-1") {
+        id
+        name
+        pageCount
+        author {
+          id
+          firstName
+          lastName
+        }
+      }
+    }
+- 응답 :
+    {
+      "data": {
+        "bookById": {
+          "id": "book-1",
+          "name": "Effective Java",
+          "pageCount": 416,
+          "author": null
+        }
+      }
+    }
+
+2.
+- 요청쿼리 :
+    query greetingTest{
+      greeting
+    }
+- 응답 :
+    {
+      "data": {
+        "greeting": "Hello, World!"
+      }
+    }
+
+3.
+- 요청쿼리 :
+    query greeting2Test{
+      greeting2(name: "zzmin")
+    }
+- 응답 :
+    {
+      "data": {
+        "greeting2": "Welcome! zzmin :D"
+      }
+    }

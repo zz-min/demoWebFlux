@@ -1,0 +1,15 @@
+
+#logging.level.root=info
+
+#logging.level.org.springframework=info
+#logging.level.org.hugopark.test=debug
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true # graphiql? ?? ??? ?? ?? (localhost:8080/graphiql)
+      printer:
+        enabled: true # show-sql? ?? graphql ??? ?? ??
+  data:
+    mongodb:
+      uri=mongodb://localhost:27017/zzminDB:

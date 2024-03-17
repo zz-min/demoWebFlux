@@ -1,0 +1,40 @@
+#type Query {
+#    hello: String
+#}
+
+# 1. Query : 서버에게 데이터를 요청하여 호출
+type Query {
+    greeting: String
+    greeting2(name: String): String
+    bookById(id: ID): Book
+    todayNewsRanking:NewsRanking
+}
+
+type NewsRanking{
+    id: ID
+    date: String
+    hour: Int
+    title: String
+    publisher: String
+    comments: [Comment]
+}
+
+type Comment {
+    user: String
+    password: String
+    content: String
+    timestamp: String
+}
+
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}

@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class DemoWebFluxApplication
 
 fun main(args: Array<String>) {
+//	scrapNews()
 	runApplication<DemoWebFluxApplication>(*args)
 }
